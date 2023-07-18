@@ -1,4 +1,4 @@
-## 1b42756-delta-suu(fdac22ba-delta)
+## 1b42756c-delta-suu(fdac22ba-delta)
 - [Su to Suu]  v1
 - [MagiskInit] Temp fix (1/?)
 
