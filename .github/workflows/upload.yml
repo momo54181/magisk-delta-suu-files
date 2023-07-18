@@ -20,16 +20,16 @@ jobs:
     steps:
     - name: Download source code
       run: |
-        MAGISKVERSION="$(wget -q https://raw.githubusercontent.com/huskydg/magisk-files/main/canary.json -O - | jq -r ".magisk.version")"
-        MAGISKVERSIONCODE="$(wget -q https://raw.githubusercontent.com/huskydg/magisk-files/main/canary.json -O - | jq -r ".magisk.versionCode")"
+        MAGISKVERSION="$(wget -q https://raw.githubusercontent.com/PeterTea5822/magisk-delta-suu-files/main/canary.json -O - | jq -r ".magisk.version")"
+        MAGISKVERSIONCODE="$(wget -q https://raw.githubusercontent.com/PeterTea5822/magisk-delta-suu-files/main/canary.json -O - | jq -r ".magisk.versionCode")"
         for i in app-release.apk app-debug.apk stub-release.apk stub-debug.apk canary.json debug.json note.md; do
-            wget "https://raw.githubusercontent.com/huskydg/magisk-files/main/$i" -O "$i"
+            wget "https://raw.githubusercontent.com/PeterTea5822/magisk-delta-suu-files/main/$i" -O "$i"
         done
-        wget "https://github.com/topjohnwu/Magisk/archive/$(echo -n "$MAGISKVERSION" | sed "s/\-delta//g").zip" -O source-code.zip
+        wget "https://github.com/PeterTea5822/Magisk-delta-suu/archive/$(echo -n "$MAGISKVERSION" | sed "s/\-delta//g").zip" -O source-code.zip
         echo "MAGISKVERSION=$MAGISKVERSION" >> $GITHUB_ENV
         echo "MAGISKVERSIONCODE=$MAGISKVERSIONCODE" >> $GITHUB_ENV
-        sed -i "s|https://petertea5822.github.io/magisk-delta-suu-files/|https://github.com/huskydg/magisk-files/releases/download/$MAGISKVERSION/|g" canary.json
-        sed -i "s|https://petertea5822.github.io/magisk-delta-suu-files/|https://github.com/huskydg/magisk-files/releases/download/$MAGISKVERSION/|g" debug.json
+        sed -i "s|https://petertea5822.github.io/magisk-delta-suu-files/|https://github.com/PeterTea5822/magisk-delta-suu-files/releases/download/$MAGISKVERSION/|g" canary.json
+        sed -i "s|https://petertea5822.github.io/magisk-delta-suu-files/|https://github.com/PeterTea5822/magisk-delta-suu-files/releases/download/$MAGISKVERSION/|g" debug.json
 
     - uses: marvinpinto/action-automatic-releases@latest
       with:
