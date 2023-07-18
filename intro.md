@@ -27,8 +27,8 @@ This repo hosts Magisk delta related files
 
 #### Download
 
-- [Download Canary](https://huskydg.github.io/magisk-files/app-release.apk)
-- [Download Debug](https://huskydg.github.io/magisk-files/app-debug.apk) 
+- [Download Canary](https://petertea5822.github.io/magisk-delta-suu-files/app-release.apk)
+- [Download Debug](https://petertea5822.github.io/magisk-delta-suu-files/app-debug.apk) 
 - [Changelog](https://github.com/HuskyDG/magisk-files/blob/main/note.md)
 
 #### Source code

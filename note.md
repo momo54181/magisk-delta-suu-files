@@ -1,5 +1,5 @@
-## fdac22ba-delta
-
+## f9e2e5f-delta-suu(fdac22ba-delta)
+- [Su to Suu]  v1
 - [MagiskInit] Temp fix (1/?)
 
 Canary and Debug are built from the same source code.  Debug builds have more detailed logs and are suitable for debugging. Canary builds have less logs, are more stable than Debug, and are suitable for most common uses
