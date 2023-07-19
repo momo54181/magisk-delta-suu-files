@@ -15,11 +15,12 @@ This repo hosts Magisk delta related files
 - [Internal Documents](./docs/internal-guide.md)
 - [Frequently asked questions (FAQ)](./docs/faq.md)
 
+**This is not an officially supported [huskydg](https://github.com/huskydg) project**. 
+
+> If you are looking for official Magisk delta, you are in the wrong place, please [go to this page and download Official Magisk delta](https://github.com/huskydg/magisk-files)
+
+
 ## Download
-
-### Stable / Beta
-
-- [Download Magisk 25206](https://cdn.jsdelivr.net/gh/huskydg/magisk-files@301b1865c7d47bbed1e375541987aee0cd1b753d/app-release.apk)
 
 ### Canary / Debug
 
@@ -29,23 +30,18 @@ This repo hosts Magisk delta related files
 
 - [Download Canary](https://petertea5822.github.io/magisk-delta-suu-files/app-release.apk)
 - [Download Debug](https://petertea5822.github.io/magisk-delta-suu-files/app-debug.apk) 
-- [Changelog](https://github.com/HuskyDG/magisk-files/blob/main/note.md)
+
 
 #### Source code
 
-- Magisk Delta is [open source under GNU v3](#license). The `source-code.zip` will be published along with released build here: <https://github.com/HuskyDG/magisk-files/releases>
+- Magisk Delta is [open source under GNU v3](#license). The `source-code.zip` will be published along with released build here: <https://github.com/PeterTea5822/magisk-delta-suu-files/releases>
 - The process to build Magisk Delta is same as [Official Magisk](https://github.com/topjohnwu/magisk#building-and-development). Remember to add `-delta` prefix into `versionName` in `config.prop`.
 
-## Donate me
-
-- Paypal: [paypal.me/huskydg](http://paypal.me/huskydg)
-- You can now donate me if you want. Remember, I will not make this as a monetization tool and donate is not obligated. Thanks for all your supports and hope you have a good day! 👍
-
-## Other links
-
-- [Telegram group](https://t.me/magiskdelta)
 
 ## Credits
+- Patch vivo_do_mount_check Program author: [wuxianlin](https://github.com/wuxianlin/build_magisk_vivo/) 
+- Libsuu author: [4accccc](https://github.com/4accccc/libsuu)
+- Magisk delta author: [huskydg](https://github.com/huskydg/magisk-files)
 
 - Magisk author: [topjohnwu](https://github.com/topjohnwu/magisk)
 - Magisk contributors: [vvb2060](https://github.com/vvb2060), [yujincheng08](https://github.com/yujincheng08), [RikkaW](https://github.com/RikkaW), [canyie](https://github.com/canyie)
