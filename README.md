@@ -1,3 +1,4 @@
 ## Where is this?
 
-[Do you want to know? Follow me!](./intro.md)
+[English](./intro.md)
+[Chinese](./intro_zh.md)
