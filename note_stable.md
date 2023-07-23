@@ -15,7 +15,7 @@
 - [App] Wait for service to bind before accessing  [topjohnwu/Magisk#6268](https://github.com/topjohnwu/Magisk/pull/6268)
 - [Modules] Support magic mount more partitions (`my_*`, `odm`, `optics`, `prism`)
 - [MagiskInit] Use stable random number seed [topjohnwu/Magisk#6340](https://github.com/topjohnwu/Magisk/pull/6340)
-- [MagiskHide] Introduce [SuList feature](https://petertea5822.github.io/magisk-delta-suu-files/docs/sulist): Sulist apps are granted root, Magisk remain invisible for other processes
+- [MagiskHide] Introduce [SuList feature](https://petertea5822.github.io/magisk-delta-suu-files/docs/internal-guide.html): Sulist apps are granted root, Magisk remain invisible for other processes
 - [Zygisk]: Change to Native bridge method (Credit @5ec1cff for [Maru](https://github.com/topjohnwu/Magisk/tree/940a3862a4b0868ebe02ae035bcb7fefa6985bc2), [chinese post about it](https://github.com/5ec1cff/my-notes/blob/master/maru.md))
 
 ## Magisk (c3b4678f) (25204)
