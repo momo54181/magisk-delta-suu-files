@@ -20,17 +20,17 @@ jobs:
     steps:
     - name: Download source code
       run: |
-        MAGISKVERSION="$(wget -q https://raw.githubusercontent.com/PeterTea5822/magisk-delta-suu-files/main/canary.json -O - | jq -r ".magisk.version")"
-        MAGISKVERSIONCODE="$(wget -q https://raw.githubusercontent.com/PeterTea5822/magisk-delta-suu-files/main/canary.json -O - | jq -r ".magisk.versionCode")"
-        MAGISKCOMMIT="$(wget -q https://raw.githubusercontent.com/PeterTea5822/magisk-delta-suu-files/main/release.json -O - | jq -r ".magisk.commit")"
+        MAGISKVERSION="$(wget -q https://raw.githubusercontent.com/momo54181/magisk-delta-suu-files/main/canary.json -O - | jq -r ".magisk.version")"
+        MAGISKVERSIONCODE="$(wget -q https://raw.githubusercontent.com/momo54181/magisk-delta-suu-files/main/canary.json -O - | jq -r ".magisk.versionCode")"
+        MAGISKCOMMIT="$(wget -q https://raw.githubusercontent.com/momo54181/magisk-delta-suu-files/main/release.json -O - | jq -r ".magisk.commit")"
         for i in app-release.apk app-debug.apk stub-release.apk stub-debug.apk canary.json debug.json note.md; do
-            wget "https://raw.githubusercontent.com/PeterTea5822/magisk-delta-suu-files/main/$i" -O "$i"
+            wget "https://raw.githubusercontent.com/momo54181/magisk-delta-suu-files/main/$i" -O "$i"
         done
-        wget "https://github.com/PeterTea5822/Magisk-delta-suu/archive/$(echo -n "$MAGISKCOMMIT" | sed "s/\-delta//g").zip" -O source-code.zip
+        wget "https://github.com/momo54181/Magisk-delta-suu/archive/$(echo -n "$MAGISKCOMMIT" | sed "s/\-delta//g").zip" -O source-code.zip
         echo "MAGISKVERSION=$MAGISKVERSION" >> $GITHUB_ENV
         echo "MAGISKVERSIONCODE=$MAGISKVERSIONCODE" >> $GITHUB_ENV
-        sed -i "s|https://petertea5822.github.io/magisk-delta-suu-files/|https://github.com/PeterTea5822/magisk-delta-suu-files/releases/download/$MAGISKVERSION/|g" canary.json
-        sed -i "s|https://petertea5822.github.io/magisk-delta-suu-files/|https://github.com/PeterTea5822/magisk-delta-suu-files/releases/download/$MAGISKVERSION/|g" debug.json
+        sed -i "s|https://momo54181.github.io/magisk-delta-suu-files/|https://github.com/momo54181/magisk-delta-suu-files/releases/download/$MAGISKVERSION/|g" canary.json
+        sed -i "s|https://momo54181.github.io/magisk-delta-suu-files/|https://github.com/momo54181/magisk-delta-suu-files/releases/download/$MAGISKVERSION/|g" debug.json
 
     - uses: marvinpinto/action-automatic-releases@latest
       with:
